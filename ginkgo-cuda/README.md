@@ -1,0 +1,1 @@
+This file is taken from a branch of the ginkgo library where I implemented the GPU solvers. It is not meant to be standalone in any way, it is also not just swap-in-and-run. It is only meant to give definite answers on how algorithms described in the thesis are actually implemented.
