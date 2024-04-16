@@ -1,0 +1,1 @@
+This folder contains both raw data ("...full_data.json") as well as aggregated data ("...postprocessed.json"). This folder also contains the scripts that were used to aggreagte and postprocess the raw data. This folder also contains a legacy dataset, full_aggregated_wiv8wv1_b.json, which is not understandable without further context, but included here for completeness.
