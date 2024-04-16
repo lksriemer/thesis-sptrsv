@@ -1,0 +1,3412 @@
+[
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_1000000_amd/stencil27_1000000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 2.0871e-05,
+                        "lower_trs::generate": 0.0046930290000000005,
+                        "allocate": 0.000393013,
+                        "copy": 1.1318e-05,
+                        "free": 0.00034211500000000004,
+                        "overhead": 4.7408000000000004e-05
+                    },
+                    "time": 0.005342276
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2853e-05,
+                        "lower_trs::should_perform_transpose": 1.6910000000000002e-06,
+                        "lower_trs::solve": 2.1008000000000003e-05,
+                        "allocate": 1.106e-05,
+                        "copy": 0.00317897,
+                        "free": 9.678000000000001e-06,
+                        "overhead": 7.822e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.003258674
+                },
+                "forward_error": 1.8899713145347754e+66,
+                "residual_norm": 8.529102629897191e+199,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_1000000_amd/stencil27_1000000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.1336000000000001e-05,
+                        "lower_trs::generate": 0.002621415,
+                        "allocate": 0.000789024,
+                        "components::fill_array": 1.9254000000000002e-05,
+                        "csr::extract_diagonal": 2.0013e-05,
+                        "copy": 0.0025317760000000003,
+                        "free": 0.001004506,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.043349863,
+                        "diagonal::apply_to_csr": 2.8278000000000003e-05,
+                        "overhead": 0.001320306
+                    },
+                    "time": 0.047782928
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2596000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.7860000000000001e-06,
+                        "lower_trs::solve": 2.2728e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.3281e-05,
+                        "dense::copy": 1.0671e-05,
+                        "diagonal::apply_to_dense": 5.363e-06,
+                        "allocate": 1.1871e-05,
+                        "copy": 0.0032300700000000003,
+                        "free": 9.813e-06,
+                        "overhead": 9.481000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.003256853
+                },
+                "forward_error": 1.8899713145347754e+66,
+                "residual_norm": 8.529102629897191e+199,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_1000000_input/stencil27_1000000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.805e-05,
+                        "lower_trs::generate": 0.007164293,
+                        "allocate": 0.00041521200000000004,
+                        "copy": 1.1498e-05,
+                        "free": 0.000329605,
+                        "overhead": 4.7308e-05
+                    },
+                    "time": 0.007888769
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2724e-05,
+                        "lower_trs::should_perform_transpose": 1.7810000000000002e-06,
+                        "lower_trs::solve": 2.0914e-05,
+                        "allocate": 1.1469000000000001e-05,
+                        "copy": 0.006421409,
+                        "free": 1.0068e-05,
+                        "overhead": 7.497e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.006478708
+                },
+                "forward_error": null,
+                "residual_norm": null,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_1000000_input/stencil27_1000000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.0729e-05,
+                        "lower_trs::generate": 3.9738000000000005e-05,
+                        "allocate": 0.0006639920000000001,
+                        "components::fill_array": 1.4366000000000001e-05,
+                        "csr::extract_diagonal": 4.439e-06,
+                        "copy": 0.0024634880000000002,
+                        "free": 0.000958721,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.042921589,
+                        "diagonal::apply_to_csr": 1.0797e-05,
+                        "overhead": 4.4781000000000004e-05
+                    },
+                    "time": 0.046702531
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2202000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.833e-06,
+                        "lower_trs::solve": 2.2406000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.572000000000001e-06,
+                        "dense::copy": 1.0427e-05,
+                        "diagonal::apply_to_dense": 4.645e-06,
+                        "allocate": 1.0862e-05,
+                        "copy": 0.005971234000000001,
+                        "free": 1.0159e-05,
+                        "overhead": 9.331000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.006125441
+                },
+                "forward_error": null,
+                "residual_norm": null,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_100000_amdlu/stencil27_100000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {},
+        "error_type": "gko::StreamError",
+        "error": "/home/lksri/ginkgo/core/base/mtx_io.cpp:856: read_binary_raw: failed reading header"
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_100000_amdlu/stencil27_100000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {},
+        "error_type": "gko::StreamError",
+        "error": "/home/lksri/ginkgo/core/base/mtx_io.cpp:856: read_binary_raw: failed reading header"
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_10000_amd/stencil27_10000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.8472000000000002e-05,
+                        "lower_trs::generate": 0.00053678,
+                        "allocate": 4.3735e-05,
+                        "copy": 1.0242000000000001e-05,
+                        "free": 4.1455e-05,
+                        "overhead": 3.7751000000000005e-05
+                    },
+                    "time": 0.000606802
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1363000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.105e-06,
+                        "lower_trs::solve": 1.7614e-05,
+                        "allocate": 9.021e-06,
+                        "copy": 0.000272837,
+                        "free": 8.266e-06,
+                        "overhead": 6.881000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000304393
+                },
+                "forward_error": 140279326.45171317,
+                "residual_norm": 9.20537799095807e+31,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_10000_amd/stencil27_10000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.065e-06,
+                        "lower_trs::generate": 3.0031e-05,
+                        "allocate": 4.3252000000000005e-05,
+                        "components::fill_array": 9.464000000000001e-06,
+                        "csr::extract_diagonal": 3.954000000000001e-06,
+                        "copy": 0.00014020700000000002,
+                        "free": 3.0981e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 4.6885e-05,
+                        "diagonal::apply_to_csr": 8.7e-06,
+                        "overhead": 2.7385000000000003e-05
+                    },
+                    "time": 0.000260227
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0228000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.1720000000000002e-06,
+                        "lower_trs::solve": 2.1531e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.2051e-05,
+                        "dense::copy": 7.830000000000001e-06,
+                        "diagonal::apply_to_dense": 4.12e-06,
+                        "allocate": 9.817000000000001e-06,
+                        "copy": 0.00023613,
+                        "free": 8.525e-06,
+                        "overhead": 8.644e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000285797
+                },
+                "forward_error": 140279326.45171317,
+                "residual_norm": 9.20537799095807e+31,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_10000_amdlu/stencil27_10000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.8497000000000003e-05,
+                        "lower_trs::generate": 0.004378185000000001,
+                        "allocate": 3.7282e-05,
+                        "copy": 1.0623000000000001e-05,
+                        "free": 3.2829e-05,
+                        "overhead": 4.1296000000000006e-05
+                    },
+                    "time": 0.004494902
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2274000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.258e-06,
+                        "lower_trs::solve": 1.6339e-05,
+                        "allocate": 8.534e-06,
+                        "copy": 0.003964128,
+                        "free": 8.348e-06,
+                        "overhead": 7.074e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.004010617
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_10000_amdlu/stencil27_10000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 7.956e-06,
+                        "lower_trs::generate": 3.5031000000000004e-05,
+                        "allocate": 0.00029074200000000003,
+                        "components::fill_array": 9.507e-06,
+                        "csr::extract_diagonal": 3.377e-06,
+                        "copy": 0.00046871200000000003,
+                        "free": 0.000291883,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.000536599,
+                        "diagonal::apply_to_csr": 1.0311e-05,
+                        "overhead": 3.7901e-05
+                    },
+                    "time": 0.001632397
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2357e-05,
+                        "lower_trs::should_perform_transpose": 1.364e-06,
+                        "lower_trs::solve": 2.2793e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.408e-06,
+                        "dense::copy": 9.147e-06,
+                        "diagonal::apply_to_dense": 4.206e-06,
+                        "allocate": 1.0218000000000001e-05,
+                        "copy": 0.0038861380000000004,
+                        "free": 9.240000000000001e-06,
+                        "overhead": 9.008e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.00394233
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_10000_input/stencil27_10000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.7104e-05,
+                        "lower_trs::generate": 0.000772303,
+                        "allocate": 5.0545000000000005e-05,
+                        "copy": 1.0421e-05,
+                        "free": 3.3451e-05,
+                        "overhead": 3.9425e-05
+                    },
+                    "time": 0.000843777
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1784000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.2760000000000001e-06,
+                        "lower_trs::solve": 1.6382e-05,
+                        "allocate": 8.688e-06,
+                        "copy": 0.000614418,
+                        "free": 9.155000000000001e-06,
+                        "overhead": 6.591e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000636648
+                },
+                "forward_error": 1.0065853298553896e+59,
+                "residual_norm": 3.4157149577586736e+58,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_10000_input/stencil27_10000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.26e-06,
+                        "lower_trs::generate": 3.21e-05,
+                        "allocate": 4.2067e-05,
+                        "components::fill_array": 9.366e-06,
+                        "csr::extract_diagonal": 3.5330000000000003e-06,
+                        "copy": 0.00013217,
+                        "free": 3.0555e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 4.8296e-05,
+                        "diagonal::apply_to_csr": 8.791000000000001e-06,
+                        "overhead": 2.6517e-05
+                    },
+                    "time": 0.000262901
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0912e-05,
+                        "lower_trs::should_perform_transpose": 1.128e-06,
+                        "lower_trs::solve": 2.1035e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.041e-06,
+                        "dense::copy": 6.8620000000000005e-06,
+                        "diagonal::apply_to_dense": 4.0320000000000005e-06,
+                        "allocate": 9.396000000000001e-06,
+                        "copy": 0.000558068,
+                        "free": 9.153e-06,
+                        "overhead": 8.528e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000608748
+                },
+                "forward_error": 1.0065853298553896e+59,
+                "residual_norm": 3.4157149577586736e+58,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_100_amd/stencil27_100_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.4900000000000001e-05,
+                        "lower_trs::generate": 0.00015667300000000002,
+                        "allocate": 3.4276e-05,
+                        "copy": 1.0869e-05,
+                        "free": 3.1341000000000004e-05,
+                        "overhead": 3.7789e-05
+                    },
+                    "time": 0.000204654
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0831e-05,
+                        "lower_trs::should_perform_transpose": 1.137e-06,
+                        "lower_trs::solve": 1.6261000000000002e-05,
+                        "allocate": 7.924e-06,
+                        "copy": 5.6661000000000005e-05,
+                        "free": 7.768e-06,
+                        "overhead": 6.744e-06
+                    },
+                    "iterations": 0,
+                    "time": 9.3039e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_100_amd/stencil27_100_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.5470000000000004e-06,
+                        "lower_trs::generate": 3.2415e-05,
+                        "allocate": 4.0428e-05,
+                        "components::fill_array": 8.399e-06,
+                        "csr::extract_diagonal": 3.7430000000000004e-06,
+                        "copy": 0.000115896,
+                        "free": 3.0233000000000003e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.5002000000000002e-05,
+                        "diagonal::apply_to_csr": 9.092e-06,
+                        "overhead": 2.6075e-05
+                    },
+                    "time": 0.000192355
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 9.862e-06,
+                        "lower_trs::should_perform_transpose": 1.187e-06,
+                        "lower_trs::solve": 2.0911e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 5.821000000000001e-06,
+                        "dense::copy": 6.0670000000000005e-06,
+                        "diagonal::apply_to_dense": 3.501e-06,
+                        "allocate": 9.597e-06,
+                        "copy": 4.8121e-05,
+                        "free": 8.627e-06,
+                        "overhead": 8.293e-06
+                    },
+                    "iterations": 0,
+                    "time": 8.7778e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_100_amdlu/stencil27_100_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.4597000000000001e-05,
+                        "lower_trs::generate": 0.000167691,
+                        "allocate": 3.9128e-05,
+                        "copy": 1.0504000000000001e-05,
+                        "free": 3.977e-05,
+                        "overhead": 3.6772e-05
+                    },
+                    "time": 0.000221906
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0975e-05,
+                        "lower_trs::should_perform_transpose": 1.17e-06,
+                        "lower_trs::solve": 1.6839000000000003e-05,
+                        "allocate": 8.181e-06,
+                        "copy": 7.009900000000001e-05,
+                        "free": 7.689e-06,
+                        "overhead": 6.588e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000106064
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_100_amdlu/stencil27_100_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.479e-06,
+                        "lower_trs::generate": 3.056e-05,
+                        "allocate": 4.868e-05,
+                        "components::fill_array": 8.621000000000001e-06,
+                        "csr::extract_diagonal": 3.944e-06,
+                        "copy": 0.00010663300000000001,
+                        "free": 3.0056e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.3997e-05,
+                        "diagonal::apply_to_csr": 8.625000000000001e-06,
+                        "overhead": 2.5201e-05
+                    },
+                    "time": 0.000190785
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.002e-05,
+                        "lower_trs::should_perform_transpose": 1.0730000000000001e-06,
+                        "lower_trs::solve": 2.1063e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 5.860000000000001e-06,
+                        "dense::copy": 6.026e-06,
+                        "diagonal::apply_to_dense": 3.729e-06,
+                        "allocate": 9.722000000000001e-06,
+                        "copy": 6.8489e-05,
+                        "free": 8.293e-06,
+                        "overhead": 8.262e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000111442
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_100_input/stencil27_100_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.6754000000000003e-05,
+                        "lower_trs::generate": 0.000175987,
+                        "allocate": 3.4791e-05,
+                        "copy": 1.1339000000000001e-05,
+                        "free": 3.0775e-05,
+                        "overhead": 3.9305000000000004e-05
+                    },
+                    "time": 0.000225987
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0880000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.2030000000000002e-06,
+                        "lower_trs::solve": 1.6087e-05,
+                        "allocate": 7.79e-06,
+                        "copy": 7.0814e-05,
+                        "free": 7.933e-06,
+                        "overhead": 6.601e-06
+                    },
+                    "iterations": 0,
+                    "time": 9.8896e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil27_100_input/stencil27_100_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.985e-06,
+                        "lower_trs::generate": 3.1141e-05,
+                        "allocate": 4.0022000000000004e-05,
+                        "components::fill_array": 8.934000000000001e-06,
+                        "csr::extract_diagonal": 4.179e-06,
+                        "copy": 0.00010424800000000001,
+                        "free": 3.7975e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.4754e-05,
+                        "diagonal::apply_to_csr": 8.432e-06,
+                        "overhead": 2.6058e-05
+                    },
+                    "time": 0.000182561
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0194000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.127e-06,
+                        "lower_trs::solve": 2.1603e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 5.963e-06,
+                        "dense::copy": 6.792e-06,
+                        "diagonal::apply_to_dense": 3.974e-06,
+                        "allocate": 9.92e-06,
+                        "copy": 6.0008000000000006e-05,
+                        "free": 8.903000000000001e-06,
+                        "overhead": 8.380000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.00010802
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_1000000_amd/stencil5_1000000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 2.3234e-05,
+                        "lower_trs::generate": 0.000678489,
+                        "allocate": 0.000399136,
+                        "copy": 1.166e-05,
+                        "free": 0.00034283,
+                        "overhead": 4.7301e-05
+                    },
+                    "time": 0.001356743
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2271000000000002e-05,
+                        "lower_trs::should_perform_transpose": 1.701e-06,
+                        "lower_trs::solve": 2.0759000000000002e-05,
+                        "allocate": 1.1005e-05,
+                        "copy": 0.00013257,
+                        "free": 9.523e-06,
+                        "overhead": 7.442e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000168485
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_1000000_amd/stencil5_1000000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.108e-05,
+                        "lower_trs::generate": 3.9970000000000005e-05,
+                        "allocate": 0.0005452310000000001,
+                        "components::fill_array": 1.4068000000000002e-05,
+                        "csr::extract_diagonal": 4.445000000000001e-06,
+                        "copy": 0.0020096470000000003,
+                        "free": 0.000676299,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.042664254000000006,
+                        "diagonal::apply_to_csr": 1.079e-05,
+                        "overhead": 4.9217e-05
+                    },
+                    "time": 0.045811426
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1608000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.6590000000000001e-06,
+                        "lower_trs::solve": 2.2415e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.2876e-05,
+                        "dense::copy": 1.0272000000000001e-05,
+                        "diagonal::apply_to_dense": 4.928e-06,
+                        "allocate": 1.0942000000000001e-05,
+                        "copy": 0.000172732,
+                        "free": 8.98e-06,
+                        "overhead": 9.129e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000232631
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_1000000_amdlu/stencil5_1000000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.6789e-05,
+                        "lower_trs::generate": 0.014403881,
+                        "allocate": 0.000437563,
+                        "copy": 1.2999e-05,
+                        "free": 0.000352948,
+                        "overhead": 4.9873e-05
+                    },
+                    "time": 0.015302691
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.4161e-05,
+                        "lower_trs::should_perform_transpose": 2.1060000000000002e-06,
+                        "lower_trs::solve": 2.6763e-05,
+                        "allocate": 1.2375000000000001e-05,
+                        "copy": 0.013766427000000001,
+                        "free": 1.0787e-05,
+                        "overhead": 8.974e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.013843829
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_1000000_amdlu/stencil5_1000000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.1655000000000001e-05,
+                        "lower_trs::generate": 4.3854000000000004e-05,
+                        "allocate": 0.0010086420000000001,
+                        "components::fill_array": 1.8184e-05,
+                        "csr::extract_diagonal": 5.748000000000001e-06,
+                        "copy": 0.004778756,
+                        "free": 0.0019519070000000001,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.043235525000000004,
+                        "diagonal::apply_to_csr": 1.2484000000000001e-05,
+                        "overhead": 5.1907e-05
+                    },
+                    "time": 0.050810295
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.3515e-05,
+                        "lower_trs::should_perform_transpose": 2.0110000000000003e-06,
+                        "lower_trs::solve": 2.7885e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 7.870000000000001e-06,
+                        "dense::copy": 1.1392e-05,
+                        "diagonal::apply_to_dense": 7.180000000000001e-06,
+                        "allocate": 1.1469000000000001e-05,
+                        "copy": 0.014821537000000001,
+                        "free": 9.968e-06,
+                        "overhead": 1.1187000000000001e-05
+                    },
+                    "iterations": 0,
+                    "time": 0.015032034
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_1000000_input/stencil5_1000000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.9041000000000003e-05,
+                        "lower_trs::generate": 0.009200575,
+                        "allocate": 0.00038911500000000004,
+                        "copy": 1.1566e-05,
+                        "free": 0.000337833,
+                        "overhead": 4.8792e-05
+                    },
+                    "time": 0.009918325
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.4081000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.7690000000000001e-06,
+                        "lower_trs::solve": 2.2069e-05,
+                        "allocate": 1.0728000000000001e-05,
+                        "copy": 0.007652717000000001,
+                        "free": 1.0925000000000001e-05,
+                        "overhead": 8.192e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.007678491
+                },
+                "forward_error": null,
+                "residual_norm": null,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_1000000_input/stencil5_1000000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.1267e-05,
+                        "lower_trs::generate": 3.9472000000000004e-05,
+                        "allocate": 0.0005139350000000001,
+                        "components::fill_array": 1.3958000000000001e-05,
+                        "csr::extract_diagonal": 4.454e-06,
+                        "copy": 0.0017735460000000002,
+                        "free": 0.000670331,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.042664027,
+                        "diagonal::apply_to_csr": 1.1128000000000001e-05,
+                        "overhead": 4.3567000000000005e-05
+                    },
+                    "time": 0.045992745
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1842000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.644e-06,
+                        "lower_trs::solve": 2.2449e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.661e-06,
+                        "dense::copy": 1.0201000000000001e-05,
+                        "diagonal::apply_to_dense": 5.033e-06,
+                        "allocate": 1.0221000000000001e-05,
+                        "copy": 0.00672991,
+                        "free": 9.309e-06,
+                        "overhead": 9.125e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.006801262
+                },
+                "forward_error": null,
+                "residual_norm": null,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_10000_amd/stencil5_10000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.5348e-05,
+                        "lower_trs::generate": 0.000200776,
+                        "allocate": 3.9507e-05,
+                        "copy": 1.0918000000000001e-05,
+                        "free": 3.3661e-05,
+                        "overhead": 3.972e-05
+                    },
+                    "time": 0.000240377
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1394000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.219e-06,
+                        "lower_trs::solve": 1.7068e-05,
+                        "allocate": 8.528e-06,
+                        "copy": 2.4163000000000002e-05,
+                        "free": 8.072e-06,
+                        "overhead": 6.905000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 5.059e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_10000_amd/stencil5_10000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.009e-06,
+                        "lower_trs::generate": 3.8108e-05,
+                        "allocate": 4.3558000000000005e-05,
+                        "components::fill_array": 9.723e-06,
+                        "csr::extract_diagonal": 3.428e-06,
+                        "copy": 0.000122994,
+                        "free": 3.0472000000000002e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 4.5863000000000005e-05,
+                        "diagonal::apply_to_csr": 8.954000000000001e-06,
+                        "overhead": 3.2727e-05
+                    },
+                    "time": 0.000228373
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.092e-05,
+                        "lower_trs::should_perform_transpose": 1.288e-06,
+                        "lower_trs::solve": 2.2406000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.1249e-05,
+                        "dense::copy": 7.801e-06,
+                        "diagonal::apply_to_dense": 4.407e-06,
+                        "allocate": 9.974000000000001e-06,
+                        "copy": 1.5261000000000002e-05,
+                        "free": 8.31e-06,
+                        "overhead": 8.642000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 6.3203e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_10000_amdlu/stencil5_10000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.6394000000000003e-05,
+                        "lower_trs::generate": 0.0008727580000000001,
+                        "allocate": 4.4923000000000003e-05,
+                        "copy": 1.0711000000000001e-05,
+                        "free": 3.3155000000000004e-05,
+                        "overhead": 4.1832e-05
+                    },
+                    "time": 0.000931548
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1436e-05,
+                        "lower_trs::should_perform_transpose": 1.1430000000000001e-06,
+                        "lower_trs::solve": 1.6865000000000002e-05,
+                        "allocate": 8.582e-06,
+                        "copy": 0.00060333,
+                        "free": 8.186000000000001e-06,
+                        "overhead": 7.118e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000641886
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_10000_amdlu/stencil5_10000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.022e-06,
+                        "lower_trs::generate": 3.3701e-05,
+                        "allocate": 0.00013924300000000002,
+                        "components::fill_array": 9.467000000000001e-06,
+                        "csr::extract_diagonal": 3.973e-06,
+                        "copy": 0.000143213,
+                        "free": 0.000181249,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 5.1839e-05,
+                        "diagonal::apply_to_csr": 9.672e-06,
+                        "overhead": 3.0653e-05
+                    },
+                    "time": 0.000558962
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1668e-05,
+                        "lower_trs::should_perform_transpose": 1.3270000000000002e-06,
+                        "lower_trs::solve": 2.2108000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.751e-06,
+                        "dense::copy": 9.509e-06,
+                        "diagonal::apply_to_dense": 4.407e-06,
+                        "allocate": 1.0340000000000001e-05,
+                        "copy": 0.000738086,
+                        "free": 8.683e-06,
+                        "overhead": 9.258e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000578022
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_10000_input/stencil5_10000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.4386e-05,
+                        "lower_trs::generate": 0.000510316,
+                        "allocate": 4.2393000000000006e-05,
+                        "copy": 1.0706e-05,
+                        "free": 3.3653000000000005e-05,
+                        "overhead": 3.7694e-05
+                    },
+                    "time": 0.000578041
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1841e-05,
+                        "lower_trs::should_perform_transpose": 1.105e-06,
+                        "lower_trs::solve": 1.6593000000000002e-05,
+                        "allocate": 8.388e-06,
+                        "copy": 0.000245498,
+                        "free": 8.338e-06,
+                        "overhead": 6.8230000000000006e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000272813
+                },
+                "forward_error": 5.908106170066116e+43,
+                "residual_norm": 2.1001421160613004e+42,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_10000_input/stencil5_10000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.041e-06,
+                        "lower_trs::generate": 3.2338e-05,
+                        "allocate": 4.2023e-05,
+                        "components::fill_array": 9.171e-06,
+                        "csr::extract_diagonal": 3.676e-06,
+                        "copy": 0.00012202300000000001,
+                        "free": 3.1023000000000004e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 4.4765e-05,
+                        "diagonal::apply_to_csr": 8.87e-06,
+                        "overhead": 2.6467000000000003e-05
+                    },
+                    "time": 0.000230942
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0691000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.162e-06,
+                        "lower_trs::solve": 2.1785000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.0890000000000005e-06,
+                        "dense::copy": 6.416e-06,
+                        "diagonal::apply_to_dense": 3.772e-06,
+                        "allocate": 9.268e-06,
+                        "copy": 0.000236502,
+                        "free": 9.408e-06,
+                        "overhead": 8.367e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000276401
+                },
+                "forward_error": 5.908106170066116e+43,
+                "residual_norm": 2.1001421160613004e+42,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_100_amd/stencil5_100_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.4909e-05,
+                        "lower_trs::generate": 0.000107541,
+                        "allocate": 3.5354e-05,
+                        "copy": 1.0828e-05,
+                        "free": 3.2045e-05,
+                        "overhead": 3.8239000000000004e-05
+                    },
+                    "time": 0.000152849
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1396e-05,
+                        "lower_trs::should_perform_transpose": 1.337e-06,
+                        "lower_trs::solve": 1.6957e-05,
+                        "allocate": 8.47e-06,
+                        "copy": 2.3843000000000002e-05,
+                        "free": 8.201e-06,
+                        "overhead": 6.8280000000000005e-06
+                    },
+                    "iterations": 0,
+                    "time": 4.975e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_100_amd/stencil5_100_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.935000000000001e-06,
+                        "lower_trs::generate": 3.7683000000000005e-05,
+                        "allocate": 4.0666e-05,
+                        "components::fill_array": 9.676e-06,
+                        "csr::extract_diagonal": 3.4480000000000003e-06,
+                        "copy": 0.00010591100000000001,
+                        "free": 3.0454000000000004e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.4233e-05,
+                        "diagonal::apply_to_csr": 8.233e-06,
+                        "overhead": 3.1802000000000005e-05
+                    },
+                    "time": 0.000192226
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0212e-05,
+                        "lower_trs::should_perform_transpose": 1.1460000000000001e-06,
+                        "lower_trs::solve": 2.1150000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.1237000000000001e-05,
+                        "dense::copy": 7.298e-06,
+                        "diagonal::apply_to_dense": 4.0710000000000005e-06,
+                        "allocate": 1.0074e-05,
+                        "copy": 1.52e-05,
+                        "free": 8.997e-06,
+                        "overhead": 8.399e-06
+                    },
+                    "iterations": 0,
+                    "time": 7.2532e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_100_amdlu/stencil5_100_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.5627e-05,
+                        "lower_trs::generate": 0.00013224500000000002,
+                        "allocate": 3.9413000000000004e-05,
+                        "copy": 1.0368000000000001e-05,
+                        "free": 3.1822e-05,
+                        "overhead": 3.8312e-05
+                    },
+                    "time": 0.000184054
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0924e-05,
+                        "lower_trs::should_perform_transpose": 1.1800000000000001e-06,
+                        "lower_trs::solve": 1.6159000000000002e-05,
+                        "allocate": 7.715e-06,
+                        "copy": 4.0144e-05,
+                        "free": 8.087e-06,
+                        "overhead": 6.549e-06
+                    },
+                    "iterations": 0,
+                    "time": 6.77e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_100_amdlu/stencil5_100_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.017e-06,
+                        "lower_trs::generate": 3.1700000000000005e-05,
+                        "allocate": 3.9256000000000005e-05,
+                        "components::fill_array": 8.415e-06,
+                        "csr::extract_diagonal": 3.7150000000000004e-06,
+                        "copy": 0.00010517500000000001,
+                        "free": 2.9849000000000002e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.2905000000000002e-05,
+                        "diagonal::apply_to_csr": 7.778e-06,
+                        "overhead": 2.4696000000000002e-05
+                    },
+                    "time": 0.000182336
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0484e-05,
+                        "lower_trs::should_perform_transpose": 1.075e-06,
+                        "lower_trs::solve": 2.1162e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.047000000000001e-06,
+                        "dense::copy": 6.292e-06,
+                        "diagonal::apply_to_dense": 4.023e-06,
+                        "allocate": 9.413000000000001e-06,
+                        "copy": 4.0354e-05,
+                        "free": 8.749e-06,
+                        "overhead": 8.343000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 7.9233e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_100_input/stencil5_100_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.6927000000000002e-05,
+                        "lower_trs::generate": 0.000136944,
+                        "allocate": 3.5628000000000005e-05,
+                        "copy": 1.0875e-05,
+                        "free": 3.2363e-05,
+                        "overhead": 3.978e-05
+                    },
+                    "time": 0.000188895
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0873e-05,
+                        "lower_trs::should_perform_transpose": 1.184e-06,
+                        "lower_trs::solve": 1.6264000000000002e-05,
+                        "allocate": 7.985e-06,
+                        "copy": 3.3222e-05,
+                        "free": 7.993000000000001e-06,
+                        "overhead": 6.754e-06
+                    },
+                    "iterations": 0,
+                    "time": 6.9066e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil5_100_input/stencil5_100_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.806e-06,
+                        "lower_trs::generate": 3.1115e-05,
+                        "allocate": 3.5156e-05,
+                        "components::fill_array": 9.609e-06,
+                        "csr::extract_diagonal": 3.665e-06,
+                        "copy": 0.000104053,
+                        "free": 2.9409000000000003e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.2835e-05,
+                        "diagonal::apply_to_csr": 8.005e-06,
+                        "overhead": 2.3724000000000002e-05
+                    },
+                    "time": 0.000203678
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 9.692000000000001e-06,
+                        "lower_trs::should_perform_transpose": 1.148e-06,
+                        "lower_trs::solve": 2.1072e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 5.7340000000000005e-06,
+                        "dense::copy": 6.583e-06,
+                        "diagonal::apply_to_dense": 4.451e-06,
+                        "allocate": 9.38e-06,
+                        "copy": 3.2463000000000004e-05,
+                        "free": 8.628000000000001e-06,
+                        "overhead": 8.114e-06
+                    },
+                    "iterations": 0,
+                    "time": 7.278e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_1000000_amd/stencil7_1000000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.6678000000000002e-05,
+                        "lower_trs::generate": 0.000775782,
+                        "allocate": 0.00045543300000000004,
+                        "copy": 1.3028000000000001e-05,
+                        "free": 0.00036868800000000005,
+                        "overhead": 4.8644000000000004e-05
+                    },
+                    "time": 0.001522107
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.4341e-05,
+                        "lower_trs::should_perform_transpose": 2.081e-06,
+                        "lower_trs::solve": 2.6031000000000002e-05,
+                        "allocate": 1.1461000000000001e-05,
+                        "copy": 0.000211778,
+                        "free": 9.874e-06,
+                        "overhead": 8.862000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000260522
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_1000000_amd/stencil7_1000000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.2045e-05,
+                        "lower_trs::generate": 6.148900000000001e-05,
+                        "allocate": 0.000627288,
+                        "components::fill_array": 1.7704000000000002e-05,
+                        "csr::extract_diagonal": 7.362000000000001e-06,
+                        "copy": 0.001868375,
+                        "free": 0.000738454,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.042655343000000005,
+                        "diagonal::apply_to_csr": 1.3000000000000001e-05,
+                        "overhead": 7.3749e-05
+                    },
+                    "time": 0.046068444
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.3762000000000001e-05,
+                        "lower_trs::should_perform_transpose": 2.0830000000000002e-06,
+                        "lower_trs::solve": 2.7365000000000003e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 8.025e-06,
+                        "dense::copy": 1.1995000000000001e-05,
+                        "diagonal::apply_to_dense": 6.853e-06,
+                        "allocate": 1.2042000000000001e-05,
+                        "copy": 0.000232138,
+                        "free": 1.0513e-05,
+                        "overhead": 1.0824e-05
+                    },
+                    "iterations": 0,
+                    "time": 0.000308494
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_1000000_input/stencil7_1000000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.9457e-05,
+                        "lower_trs::generate": 0.0033088040000000003,
+                        "allocate": 0.000406365,
+                        "copy": 1.2524e-05,
+                        "free": 0.000337341,
+                        "overhead": 5.1033000000000004e-05
+                    },
+                    "time": 0.003986832
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2915000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.607e-06,
+                        "lower_trs::solve": 2.1320000000000003e-05,
+                        "allocate": 1.1083e-05,
+                        "copy": 0.002619745,
+                        "free": 9.119e-06,
+                        "overhead": 7.575e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.002658175
+                },
+                "forward_error": 2.409100002313638e+107,
+                "residual_norm": 3.396493104784883e+122,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_1000000_input/stencil7_1000000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.1267e-05,
+                        "lower_trs::generate": 4.0453e-05,
+                        "allocate": 0.000548933,
+                        "components::fill_array": 1.3497000000000001e-05,
+                        "csr::extract_diagonal": 4.3530000000000005e-06,
+                        "copy": 0.001831766,
+                        "free": 0.0009422660000000001,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.042659884,
+                        "diagonal::apply_to_csr": 1.0708000000000001e-05,
+                        "overhead": 4.3938000000000005e-05
+                    },
+                    "time": 0.045737184
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2800000000000001e-05,
+                        "lower_trs::should_perform_transpose": 2.077e-06,
+                        "lower_trs::solve": 2.5167e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 7.742e-06,
+                        "dense::copy": 1.1531e-05,
+                        "diagonal::apply_to_dense": 5.671e-06,
+                        "allocate": 1.1933e-05,
+                        "copy": 0.0026213680000000002,
+                        "free": 9.278e-06,
+                        "overhead": 1.0194000000000001e-05
+                    },
+                    "iterations": 0,
+                    "time": 0.002717313
+                },
+                "forward_error": 2.409100002313638e+107,
+                "residual_norm": 3.396493104784883e+122,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_100000_amdlu/stencil7_100000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 311.9871792237624,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.7315e-05,
+                        "lower_trs::generate": 0.016537475,
+                        "allocate": 0.00016159800000000002,
+                        "copy": 1.1097e-05,
+                        "free": 0.000187999,
+                        "overhead": 4.2852e-05
+                    },
+                    "time": 0.016736475
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.3041000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.5980000000000002e-06,
+                        "lower_trs::solve": 2.0949000000000002e-05,
+                        "allocate": 1.0216e-05,
+                        "copy": 0.015857295,
+                        "free": 1.0899e-05,
+                        "overhead": 7.6230000000000005e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.015823056
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 97336,
+        "cols": 97336
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_100000_amdlu/stencil7_100000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 311.9871792237624,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 7.779000000000001e-06,
+                        "lower_trs::generate": 3.5673e-05,
+                        "allocate": 0.001073079,
+                        "components::fill_array": 1.0002e-05,
+                        "csr::extract_diagonal": 3.2670000000000002e-06,
+                        "copy": 0.003539794,
+                        "free": 0.0018691670000000001,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.004393415,
+                        "diagonal::apply_to_csr": 1.0631e-05,
+                        "overhead": 3.9307e-05
+                    },
+                    "time": 0.010411456
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.235e-05,
+                        "lower_trs::should_perform_transpose": 1.734e-06,
+                        "lower_trs::solve": 2.3007000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.677000000000001e-06,
+                        "dense::copy": 1.0170000000000001e-05,
+                        "diagonal::apply_to_dense": 4.456e-06,
+                        "allocate": 1.1119000000000001e-05,
+                        "copy": 0.016743562,
+                        "free": 9.84e-06,
+                        "overhead": 9.297000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.016771998
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 97336,
+        "cols": 97336
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_10000_amd/stencil7_10000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.6184e-05,
+                        "lower_trs::generate": 0.000200886,
+                        "allocate": 4.193e-05,
+                        "copy": 1.1529000000000001e-05,
+                        "free": 3.5434e-05,
+                        "overhead": 4.106e-05
+                    },
+                    "time": 0.000266541
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2665000000000002e-05,
+                        "lower_trs::should_perform_transpose": 1.497e-06,
+                        "lower_trs::solve": 2.1644e-05,
+                        "allocate": 9.549000000000001e-06,
+                        "copy": 2.5168e-05,
+                        "free": 9.065e-06,
+                        "overhead": 8.081000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 5.9155e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_10000_amd/stencil7_10000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.752000000000001e-06,
+                        "lower_trs::generate": 4.2422e-05,
+                        "allocate": 5.0315e-05,
+                        "components::fill_array": 1.3280000000000002e-05,
+                        "csr::extract_diagonal": 4.86e-06,
+                        "copy": 0.000153818,
+                        "free": 0.000160297,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 5.4902000000000004e-05,
+                        "diagonal::apply_to_csr": 1.1676000000000001e-05,
+                        "overhead": 3.7425e-05
+                    },
+                    "time": 0.000397876
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2121000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.6770000000000002e-06,
+                        "lower_trs::solve": 2.7998000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.3800000000000002e-05,
+                        "dense::copy": 1.1127e-05,
+                        "diagonal::apply_to_dense": 5.762e-06,
+                        "allocate": 1.0033e-05,
+                        "copy": 1.6851000000000002e-05,
+                        "free": 9.114000000000001e-06,
+                        "overhead": 1.0354000000000001e-05
+                    },
+                    "iterations": 0,
+                    "time": 7.4891e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_10000_amdlu/stencil7_10000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 2.1487000000000003e-05,
+                        "lower_trs::generate": 0.002700178,
+                        "allocate": 3.7328e-05,
+                        "copy": 1.0303000000000001e-05,
+                        "free": 3.2259000000000004e-05,
+                        "overhead": 3.9359e-05
+                    },
+                    "time": 0.002771305
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2233000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.257e-06,
+                        "lower_trs::solve": 1.6512e-05,
+                        "allocate": 8.66e-06,
+                        "copy": 0.002367662,
+                        "free": 8.603e-06,
+                        "overhead": 6.8110000000000005e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.0023972
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_10000_amdlu/stencil7_10000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 7.454e-06,
+                        "lower_trs::generate": 3.5769e-05,
+                        "allocate": 0.00023855800000000002,
+                        "components::fill_array": 9.783000000000001e-06,
+                        "csr::extract_diagonal": 3.7240000000000003e-06,
+                        "copy": 0.000301676,
+                        "free": 0.000214803,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.0005034470000000001,
+                        "diagonal::apply_to_csr": 9.732000000000001e-06,
+                        "overhead": 4.2833e-05
+                    },
+                    "time": 0.001246937
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2003e-05,
+                        "lower_trs::should_perform_transpose": 1.368e-06,
+                        "lower_trs::solve": 2.3046000000000003e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.3239000000000001e-05,
+                        "dense::copy": 8.989e-06,
+                        "diagonal::apply_to_dense": 4.5160000000000005e-06,
+                        "allocate": 9.718e-06,
+                        "copy": 0.002288072,
+                        "free": 8.471e-06,
+                        "overhead": 8.894e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.0023466
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_10000_input/stencil7_10000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.7282e-05,
+                        "lower_trs::generate": 0.000385326,
+                        "allocate": 3.7154000000000004e-05,
+                        "copy": 1.0072000000000001e-05,
+                        "free": 4.078e-05,
+                        "overhead": 4.0179e-05
+                    },
+                    "time": 0.000453396
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0787e-05,
+                        "lower_trs::should_perform_transpose": 1.1210000000000002e-06,
+                        "lower_trs::solve": 1.67e-05,
+                        "allocate": 8.629e-06,
+                        "copy": 0.00021193700000000001,
+                        "free": 8.049e-06,
+                        "overhead": 6.465000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000216558
+                },
+                "forward_error": 20226224920745.92,
+                "residual_norm": 802814018575.3531,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_10000_input/stencil7_10000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 103.18914671611546,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.612000000000001e-06,
+                        "lower_trs::generate": 3.143e-05,
+                        "allocate": 4.2165e-05,
+                        "components::fill_array": 9.506e-06,
+                        "csr::extract_diagonal": 3.6300000000000004e-06,
+                        "copy": 0.00012331,
+                        "free": 0.000154596,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 4.66e-05,
+                        "diagonal::apply_to_csr": 8.598000000000001e-06,
+                        "overhead": 2.5382000000000002e-05
+                    },
+                    "time": 0.000355165
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1737000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.1860000000000002e-06,
+                        "lower_trs::solve": 2.2460000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.465000000000001e-06,
+                        "dense::copy": 8.753e-06,
+                        "diagonal::apply_to_dense": 3.895e-06,
+                        "allocate": 8.966e-06,
+                        "copy": 0.000229716,
+                        "free": 8.965e-06,
+                        "overhead": 8.928e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000263637
+                },
+                "forward_error": 20226224920745.92,
+                "residual_norm": 802814018575.3531,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10648,
+        "cols": 10648
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_100_amd/stencil7_100_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.5306000000000002e-05,
+                        "lower_trs::generate": 9.893900000000001e-05,
+                        "allocate": 3.3811000000000005e-05,
+                        "copy": 1.0310000000000001e-05,
+                        "free": 3.0425e-05,
+                        "overhead": 3.7736e-05
+                    },
+                    "time": 0.000147241
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1406e-05,
+                        "lower_trs::should_perform_transpose": 1.057e-06,
+                        "lower_trs::solve": 2.6606000000000002e-05,
+                        "allocate": 8.004e-06,
+                        "copy": 1.4769e-05,
+                        "free": 9.294000000000001e-06,
+                        "overhead": 1.6712000000000002e-05
+                    },
+                    "iterations": 0,
+                    "time": 4.1731e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_100_amd/stencil7_100_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.826000000000001e-06,
+                        "lower_trs::generate": 3.2766000000000004e-05,
+                        "allocate": 4.1609e-05,
+                        "components::fill_array": 8.937000000000001e-06,
+                        "csr::extract_diagonal": 3.5740000000000004e-06,
+                        "copy": 0.00010722200000000001,
+                        "free": 2.9952e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.4626e-05,
+                        "diagonal::apply_to_csr": 7.996000000000001e-06,
+                        "overhead": 2.6042000000000002e-05
+                    },
+                    "time": 0.000188563
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0911000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.2420000000000001e-06,
+                        "lower_trs::solve": 3.0342000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.059000000000001e-06,
+                        "dense::copy": 5.888e-06,
+                        "diagonal::apply_to_dense": 3.95e-06,
+                        "allocate": 9.688000000000001e-06,
+                        "copy": 1.4217000000000001e-05,
+                        "free": 9.408e-06,
+                        "overhead": 8.275000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 5.5879e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_100_amdlu/stencil7_100_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.5595000000000002e-05,
+                        "lower_trs::generate": 0.0001453,
+                        "allocate": 3.5618000000000004e-05,
+                        "copy": 1.0512e-05,
+                        "free": 3.1906e-05,
+                        "overhead": 4.4863e-05
+                    },
+                    "time": 0.000201473
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1304e-05,
+                        "lower_trs::should_perform_transpose": 1.1690000000000002e-06,
+                        "lower_trs::solve": 1.6347e-05,
+                        "allocate": 8.644e-06,
+                        "copy": 4.92e-05,
+                        "free": 8.832000000000001e-06,
+                        "overhead": 7.0710000000000006e-06
+                    },
+                    "iterations": 0,
+                    "time": 7.5034e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_100_amdlu/stencil7_100_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.262e-06,
+                        "lower_trs::generate": 3.2024000000000004e-05,
+                        "allocate": 5.0808000000000006e-05,
+                        "components::fill_array": 9.442e-06,
+                        "csr::extract_diagonal": 3.7980000000000003e-06,
+                        "copy": 0.000106242,
+                        "free": 3.1066000000000004e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.4079e-05,
+                        "diagonal::apply_to_csr": 8.079e-06,
+                        "overhead": 2.6454e-05
+                    },
+                    "time": 0.000192007
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0434e-05,
+                        "lower_trs::should_perform_transpose": 1.2820000000000002e-06,
+                        "lower_trs::solve": 2.1398e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 5.7730000000000005e-06,
+                        "dense::copy": 6.983000000000001e-06,
+                        "diagonal::apply_to_dense": 3.8100000000000004e-06,
+                        "allocate": 9.909000000000001e-06,
+                        "copy": 4.8334e-05,
+                        "free": 8.572e-06,
+                        "overhead": 8.721e-06
+                    },
+                    "iterations": 0,
+                    "time": 8.8469e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_100_input/stencil7_100_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.4805000000000001e-05,
+                        "lower_trs::generate": 0.000127939,
+                        "allocate": 3.8215e-05,
+                        "copy": 1.0774e-05,
+                        "free": 3.9525000000000005e-05,
+                        "overhead": 4.6240000000000005e-05
+                    },
+                    "time": 0.000174207
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1054000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.153e-06,
+                        "lower_trs::solve": 1.7696e-05,
+                        "allocate": 8.286e-06,
+                        "copy": 3.3906000000000004e-05,
+                        "free": 8.911e-06,
+                        "overhead": 6.774000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 6.9078e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil7_100_input/stencil7_100_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 11.180339887498949,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.867000000000001e-06,
+                        "lower_trs::generate": 3.7953e-05,
+                        "allocate": 4.1282e-05,
+                        "components::fill_array": 1.0211000000000001e-05,
+                        "csr::extract_diagonal": 3.5320000000000002e-06,
+                        "copy": 0.000107126,
+                        "free": 3.0059e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.4721000000000003e-05,
+                        "diagonal::apply_to_csr": 8.199e-06,
+                        "overhead": 3.1561000000000005e-05
+                    },
+                    "time": 0.000185852
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0227e-05,
+                        "lower_trs::should_perform_transpose": 1.207e-06,
+                        "lower_trs::solve": 2.1656e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.151e-05,
+                        "dense::copy": 7.032000000000001e-06,
+                        "diagonal::apply_to_dense": 4.067e-06,
+                        "allocate": 9.765e-06,
+                        "copy": 3.2807e-05,
+                        "free": 8.998000000000001e-06,
+                        "overhead": 8.540000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 7.3278e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 125,
+        "cols": 125
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_1000000_amd/stencil9_1000000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.9348000000000002e-05,
+                        "lower_trs::generate": 0.0032532610000000003,
+                        "allocate": 0.00039048900000000005,
+                        "copy": 1.1704e-05,
+                        "free": 0.00034474900000000004,
+                        "overhead": 5.8709e-05
+                    },
+                    "time": 0.003974703
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.3299000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.7470000000000002e-06,
+                        "lower_trs::solve": 2.1075e-05,
+                        "allocate": 1.0943e-05,
+                        "copy": 0.001396394,
+                        "free": 9.495000000000001e-06,
+                        "overhead": 7.713e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.001457739
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_1000000_amd/stencil9_1000000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.1064000000000001e-05,
+                        "lower_trs::generate": 4.0973e-05,
+                        "allocate": 0.00059803,
+                        "components::fill_array": 1.4179000000000001e-05,
+                        "csr::extract_diagonal": 4.531e-06,
+                        "copy": 0.001976171,
+                        "free": 0.000764041,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.042924587,
+                        "diagonal::apply_to_csr": 1.1241000000000001e-05,
+                        "overhead": 4.5863000000000005e-05
+                    },
+                    "time": 0.045901124
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2605e-05,
+                        "lower_trs::should_perform_transpose": 1.8400000000000002e-06,
+                        "lower_trs::solve": 2.2610000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.921e-06,
+                        "dense::copy": 9.738e-06,
+                        "diagonal::apply_to_dense": 5.256e-06,
+                        "allocate": 1.1337e-05,
+                        "copy": 0.001304877,
+                        "free": 1.0032e-05,
+                        "overhead": 9.549000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.001473183
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_1000000_amdlu/stencil9_1000000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {},
+        "error_type": "gko::StreamError",
+        "error": "/home/lksri/ginkgo/core/base/mtx_io.cpp:125: read_entry: error while reading matrix entry"
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_1000000_amdlu/stencil9_1000000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {},
+        "error_type": "gko::StreamError",
+        "error": "/home/lksri/ginkgo/core/base/mtx_io.cpp:125: read_entry: error while reading matrix entry"
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_1000000_input/stencil9_1000000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.8160000000000002e-05,
+                        "lower_trs::generate": 0.01462886,
+                        "allocate": 0.000389839,
+                        "copy": 1.0943e-05,
+                        "free": 0.000330658,
+                        "overhead": 4.7056000000000005e-05
+                    },
+                    "time": 0.015327539
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.3547000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.624e-06,
+                        "lower_trs::solve": 2.1695e-05,
+                        "allocate": 1.0049e-05,
+                        "copy": 0.013572082000000001,
+                        "free": 9.976e-06,
+                        "overhead": 8.223e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.013612642
+                },
+                "forward_error": null,
+                "residual_norm": null,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_1000000_input/stencil9_1000000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 1000.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.1159000000000001e-05,
+                        "lower_trs::generate": 3.919e-05,
+                        "allocate": 0.0005682630000000001,
+                        "components::fill_array": 1.3975000000000001e-05,
+                        "csr::extract_diagonal": 4.407e-06,
+                        "copy": 0.002087307,
+                        "free": 0.0007444470000000001,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 0.042660755,
+                        "diagonal::apply_to_csr": 1.0829e-05,
+                        "overhead": 4.3509e-05
+                    },
+                    "time": 0.046183503
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2364e-05,
+                        "lower_trs::should_perform_transpose": 1.664e-06,
+                        "lower_trs::solve": 2.2743000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.907e-06,
+                        "dense::copy": 9.887e-06,
+                        "diagonal::apply_to_dense": 5.09e-06,
+                        "allocate": 1.0591e-05,
+                        "copy": 0.012006124,
+                        "free": 9.443000000000001e-06,
+                        "overhead": 9.363e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.012046004
+                },
+                "forward_error": null,
+                "residual_norm": null,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 1000000,
+        "cols": 1000000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_10000_amd/stencil9_10000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.9367000000000003e-05,
+                        "lower_trs::generate": 0.000294177,
+                        "allocate": 4.2786e-05,
+                        "copy": 1.002e-05,
+                        "free": 3.3755000000000005e-05,
+                        "overhead": 3.8343e-05
+                    },
+                    "time": 0.000359027
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1067000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.0980000000000001e-06,
+                        "lower_trs::solve": 1.5836000000000002e-05,
+                        "allocate": 8.721e-06,
+                        "copy": 7.890800000000001e-05,
+                        "free": 8.529e-06,
+                        "overhead": 6.6070000000000004e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000118175
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_10000_amd/stencil9_10000_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.402000000000001e-06,
+                        "lower_trs::generate": 3.1783000000000004e-05,
+                        "allocate": 4.1458e-05,
+                        "components::fill_array": 9.402e-06,
+                        "csr::extract_diagonal": 3.6640000000000004e-06,
+                        "copy": 0.000124132,
+                        "free": 0.000151168,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 4.7464000000000005e-05,
+                        "diagonal::apply_to_csr": 8.47e-06,
+                        "overhead": 3.8222e-05
+                    },
+                    "time": 0.000365743
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0982000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.2250000000000001e-06,
+                        "lower_trs::solve": 2.2312000000000003e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 1.2382000000000001e-05,
+                        "dense::copy": 9.243000000000001e-06,
+                        "diagonal::apply_to_dense": 4.2680000000000005e-06,
+                        "allocate": 1.0781e-05,
+                        "copy": 7.05e-05,
+                        "free": 9.075e-06,
+                        "overhead": 8.707e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000111979
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_10000_amdlu/stencil9_10000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 2.4768e-05,
+                        "lower_trs::generate": 0.001203545,
+                        "allocate": 4.6856e-05,
+                        "copy": 1.0952000000000001e-05,
+                        "free": 3.453e-05,
+                        "overhead": 4.8137000000000003e-05
+                    },
+                    "time": 0.001230438
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.2374e-05,
+                        "lower_trs::should_perform_transpose": 1.255e-06,
+                        "lower_trs::solve": 1.745e-05,
+                        "allocate": 9.145000000000001e-06,
+                        "copy": 0.0007636380000000001,
+                        "free": 8.778000000000001e-06,
+                        "overhead": 7.360000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000785276
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_10000_amdlu/stencil9_10000_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.645000000000001e-06,
+                        "lower_trs::generate": 3.6948e-05,
+                        "allocate": 0.000143802,
+                        "components::fill_array": 9.036000000000001e-06,
+                        "csr::extract_diagonal": 4.004e-06,
+                        "copy": 0.000157114,
+                        "free": 0.000185787,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 5.0437000000000005e-05,
+                        "diagonal::apply_to_csr": 1.0133000000000001e-05,
+                        "overhead": 3.3213e-05
+                    },
+                    "time": 0.000569069
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1576e-05,
+                        "lower_trs::should_perform_transpose": 1.2960000000000002e-06,
+                        "lower_trs::solve": 2.2773e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.611000000000001e-06,
+                        "dense::copy": 8.844e-06,
+                        "diagonal::apply_to_dense": 4.363e-06,
+                        "allocate": 1.0254e-05,
+                        "copy": 0.0008831360000000001,
+                        "free": 9.353e-06,
+                        "overhead": 9.005000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000924538
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_10000_input/stencil9_10000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.4893000000000001e-05,
+                        "lower_trs::generate": 0.0007556640000000001,
+                        "allocate": 4.373e-05,
+                        "copy": 1.0224e-05,
+                        "free": 3.3051e-05,
+                        "overhead": 3.7417000000000004e-05
+                    },
+                    "time": 0.000817349
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1727000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.0930000000000002e-06,
+                        "lower_trs::solve": 1.6386000000000002e-05,
+                        "allocate": 8.714e-06,
+                        "copy": 0.00046730500000000005,
+                        "free": 8.78e-06,
+                        "overhead": 6.468000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000509478
+                },
+                "forward_error": 1.2615156911491106e+28,
+                "residual_norm": 1.1578431520778175e+95,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_10000_input/stencil9_10000_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 100.00000000000001,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.5540000000000005e-06,
+                        "lower_trs::generate": 3.1776e-05,
+                        "allocate": 4.0047000000000005e-05,
+                        "components::fill_array": 8.767000000000001e-06,
+                        "csr::extract_diagonal": 3.806e-06,
+                        "copy": 0.00012189400000000001,
+                        "free": 0.000153268,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 4.5167e-05,
+                        "diagonal::apply_to_csr": 9.025e-06,
+                        "overhead": 2.6584e-05
+                    },
+                    "time": 0.000350546
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1312000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.206e-06,
+                        "lower_trs::solve": 2.2367e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.261000000000001e-06,
+                        "dense::copy": 8.941000000000001e-06,
+                        "diagonal::apply_to_dense": 4.057e-06,
+                        "allocate": 1.0131e-05,
+                        "copy": 0.00045885600000000005,
+                        "free": 8.786e-06,
+                        "overhead": 8.49e-06
+                    },
+                    "iterations": 0,
+                    "time": 0.000516364
+                },
+                "forward_error": 1.2615156911491106e+28,
+                "residual_norm": 1.1578431520778175e+95,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 10000,
+        "cols": 10000
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_100_amd/stencil9_100_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.7164e-05,
+                        "lower_trs::generate": 0.000130228,
+                        "allocate": 3.9549000000000004e-05,
+                        "copy": 1.0958e-05,
+                        "free": 3.1089e-05,
+                        "overhead": 4.0355e-05
+                    },
+                    "time": 0.000174162
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0511e-05,
+                        "lower_trs::should_perform_transpose": 1.1860000000000002e-06,
+                        "lower_trs::solve": 1.6372000000000002e-05,
+                        "allocate": 8.168e-06,
+                        "copy": 3.2536e-05,
+                        "free": 7.937e-06,
+                        "overhead": 6.9520000000000005e-06
+                    },
+                    "iterations": 0,
+                    "time": 6.6692e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_100_amd/stencil9_100_amd.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 6.229e-06,
+                        "lower_trs::generate": 3.2232e-05,
+                        "allocate": 4.0252e-05,
+                        "components::fill_array": 8.872e-06,
+                        "csr::extract_diagonal": 3.7820000000000004e-06,
+                        "copy": 0.000104179,
+                        "free": 3.0433e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.3351e-05,
+                        "diagonal::apply_to_csr": 1.8241e-05,
+                        "overhead": 2.58e-05
+                    },
+                    "time": 0.000185381
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0526e-05,
+                        "lower_trs::should_perform_transpose": 1.21e-06,
+                        "lower_trs::solve": 2.1129e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 5.835e-06,
+                        "dense::copy": 6.514000000000001e-06,
+                        "diagonal::apply_to_dense": 3.666e-06,
+                        "allocate": 9.869e-06,
+                        "copy": 3.1173e-05,
+                        "free": 9.051e-06,
+                        "overhead": 8.342e-06
+                    },
+                    "iterations": 0,
+                    "time": 7.1022e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_100_amdlu/stencil9_100_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.6002e-05,
+                        "lower_trs::generate": 0.00014948700000000001,
+                        "allocate": 4.4529e-05,
+                        "copy": 1.1204000000000001e-05,
+                        "free": 3.1156000000000005e-05,
+                        "overhead": 3.9007e-05
+                    },
+                    "time": 0.000196434
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.1158e-05,
+                        "lower_trs::should_perform_transpose": 1.204e-06,
+                        "lower_trs::solve": 1.6713e-05,
+                        "allocate": 8.123e-06,
+                        "copy": 5.1124e-05,
+                        "free": 7.851e-06,
+                        "overhead": 6.8160000000000005e-06
+                    },
+                    "iterations": 0,
+                    "time": 7.9286e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_100_amdlu/stencil9_100_amdlu.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.989000000000001e-06,
+                        "lower_trs::generate": 3.4598e-05,
+                        "allocate": 4.5522e-05,
+                        "components::fill_array": 9.701e-06,
+                        "csr::extract_diagonal": 3.412e-06,
+                        "copy": 0.000105474,
+                        "free": 2.8867000000000003e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.2692000000000002e-05,
+                        "diagonal::apply_to_csr": 7.874000000000001e-06,
+                        "overhead": 2.7417000000000002e-05
+                    },
+                    "time": 0.000194545
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0526e-05,
+                        "lower_trs::should_perform_transpose": 1.176e-06,
+                        "lower_trs::solve": 2.0908e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 5.572e-06,
+                        "dense::copy": 6.052000000000001e-06,
+                        "diagonal::apply_to_dense": 4.096e-06,
+                        "allocate": 9.925e-06,
+                        "copy": 4.2407e-05,
+                        "free": 8.688e-06,
+                        "overhead": 8.498e-06
+                    },
+                    "iterations": 0,
+                    "time": 9.1578e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_100_input/stencil9_100_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "syncfree"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 1.4400000000000001e-05,
+                        "lower_trs::generate": 0.000144998,
+                        "allocate": 3.3902e-05,
+                        "copy": 1.089e-05,
+                        "free": 3.0714000000000004e-05,
+                        "overhead": 4.1448e-05
+                    },
+                    "time": 0.00020291
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0695e-05,
+                        "lower_trs::should_perform_transpose": 1.1740000000000001e-06,
+                        "lower_trs::solve": 1.6269e-05,
+                        "allocate": 7.627000000000001e-06,
+                        "copy": 5.118e-05,
+                        "free": 7.774e-06,
+                        "overhead": 6.455e-06
+                    },
+                    "iterations": 0,
+                    "time": 7.994e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    },
+    {
+        "filename": "/home/lksri/matrices_stencils/stencils/stencil9_100_input/stencil9_100_input.mtx.input",
+        "optimal": {
+            "spmv": "csr",
+            "sptrsv": "udiag"
+        },
+        "rhs_generation": "random",
+        "solver": {
+            "lower_trs": {
+                "recurrent_residuals": [],
+                "true_residuals": [],
+                "iteration_timestamps": [],
+                "rhs_norm": 10.0,
+                "generate": {
+                    "components": {
+                        "generate(gko::solver::LowerTrs<double, int>::Factory)": 5.403000000000001e-06,
+                        "lower_trs::generate": 3.2536e-05,
+                        "allocate": 4.1009e-05,
+                        "components::fill_array": 8.939e-06,
+                        "csr::extract_diagonal": 3.5720000000000003e-06,
+                        "copy": 0.00010568,
+                        "free": 3.0079e-05,
+                        "copy(gko::matrix::Csr<double, int>,gko::matrix::Csr<double, int>)": 2.4111e-05,
+                        "diagonal::apply_to_csr": 8.457e-06,
+                        "overhead": 2.6365000000000003e-05
+                    },
+                    "time": 0.000182633
+                },
+                "apply": {
+                    "components": {
+                        "apply(gko::solver::LowerTrs<double, int>)": 1.0069000000000001e-05,
+                        "lower_trs::should_perform_transpose": 1.113e-06,
+                        "lower_trs::solve": 2.1737000000000002e-05,
+                        "copy(gko::matrix::Dense<double>,gko::matrix::Dense<double>)": 6.7140000000000004e-06,
+                        "dense::copy": 1.4791000000000001e-05,
+                        "diagonal::apply_to_dense": 4.384e-06,
+                        "allocate": 1.0749e-05,
+                        "copy": 4.1529e-05,
+                        "free": 8.999e-06,
+                        "overhead": 8.282000000000001e-06
+                    },
+                    "iterations": 0,
+                    "time": 9.1202e-05
+                },
+                "forward_error": 0.0,
+                "residual_norm": 0.0,
+                "repetitions": 1,
+                "completed": true
+            }
+        },
+        "rows": 100,
+        "cols": 100
+    }
+]
